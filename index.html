@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XをTwitterに変換</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <img src="https://i.imgur.com/41gxW9o.png" alt="XをTwitterに変換するツール" class="header-image" />
+    </header>
+<br>
+    <main class="container">
+        <label for="inputText">テキストを入力してください:</label>
+        <textarea id="inputText" rows="4" cols="50" onkeydown="handleKeyDown(event)"></textarea><br>
+        <button onclick="replaceXWithTwitter()">変換</button>
+        <h2>変換結果:</h2>
+        <p id="outputText"></p>
+        <button id="copyButton" class="copy-button" style="display:none;" onclick="copyToClipboard()">結果をコピー</button>
+        <button id="tweetButton" style="display:none;" onclick="tweetText()">Twitterにツイート</button>
+        <button id="blueskyButton" style="display:none;" onclick="postToBluesky()">Blueskyにポスト</button>
+        <button id="threadsButton" style="display:none;" onclick="postToThreads()">Threadsにシェア</button>
+        <div id="cmdImage" class="cmd-image" style="display: none;">
+            <img src="https://i.imgur.com/6RClenc.png" alt="Command Image">
+        </div>
+    </main>
+<br>
+    <br>
+    <br>
+    <br>
+    <h3>ルール</h3>
+    <p>とくにないです</p>
+    <br>
+    <h3>注意</h3>
+    <p>リンクを含めて変換するとリンク先に飛べますが、もしかしたら危険なサイトかもしれませんよ？責任とりませんからね？(ಡωಡ)ﾆﾔﾆﾔ</p>
+    <footer class="footer">
+        <p>© 2024 XをTwitterに変換するツール</p>
+    </footer>
+</body>
+</html>
