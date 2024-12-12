@@ -1,0 +1,153 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 3px solid #0056b3;
+}
+
+.header .header-image {
+  width: 25%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 700px;
+  width: 90%;
+  margin: 40px auto;
+  flex: 1;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid #007bff;
+  border-radius: 12px;
+  resize: vertical;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+textarea:focus {
+  border-color: #0056b3;
+  box-shadow: 0 0 10px rgba(0, 91, 179, 0.3);
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: #003d7a;
+  transform: translateY(0);
+}
+
+p {
+  white-space: pre-wrap;
+  text-align: left;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+  color: #333;
+}
+
+p a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+p a:hover {
+  text-decoration: underline;
+}
+
+.copy-button {
+  background-color: #28a745;
+}
+
+.copy-button:hover {
+  background-color: #218838;
+}
+
+.footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.cmd-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.cmd-image img {
+  position: absolute;
+  width: 100px;
+  height: auto;
+  animation: drop 2s ease-in-out;
+}
+
+@keyframes drop {
+  from {
+      top: -150px;
+      opacity: 0;
+  }
+  to {
+      top: 50px;
+      opacity: 1;
+  }
+}
